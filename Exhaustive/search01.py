@@ -14,7 +14,7 @@ def solution(answers):
             answer[1]+=1
         if(answers[i] == st3[i%len(st3)]):
             answer[2]+=1
-    
+
     ret = sorted(enumerate(answer), key = lambda x:(-x[1],x[0]))
     print(ret)
     max = ret[0][1]

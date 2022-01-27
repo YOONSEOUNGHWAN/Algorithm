@@ -2,6 +2,7 @@
 import math
 import itertools
 
+
 def isPrime(n):
     if(n==0 or n==1):
         return False
@@ -12,6 +13,7 @@ def isPrime(n):
         
     return True
 
+# "12345" [1,2,3,4,5] 
 def solution(numbers):
     answer = 0
     for i in range(1, len(numbers)+1):

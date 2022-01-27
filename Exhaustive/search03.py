@@ -5,7 +5,7 @@ def Pair(n):
         if(n%i==0):
             ret.append([n//i,i])
     return ret
-        
+
 
 def solution(brown, yellow):
     total = brown + yellow

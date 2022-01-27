@@ -1,13 +1,17 @@
 import copy
+
 answer = 0
+
 def check(Board):
     cnt=0
     for i in range(N):
         for j in range(M):
             if(Board[i][j] == 0):
                 cnt+=1
+
     return cnt
 
+#얕은복사....
 def fill(Board):
     global answer
     clone = copy.deepcopy(Board)
@@ -55,6 +59,7 @@ def block(i):
             if(Board[x][y] == 0):
                 Board[x][y] = 1
                 block(i+1)
+
                 Board[x][y] = 0
 
 
